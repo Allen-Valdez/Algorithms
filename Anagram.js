@@ -15,6 +15,16 @@ const validAnagram = (firstStr, secondStr) => {
     let letter = firstStr[i];
     search[letter] ? search[letter] += 1 : search[letter] = 1;
   }
-  
+  for (let i = 0; i < secondStr.length; i++) {
+    let letter = secondStr[i];
+    if (!search[letter]) {
+      return false;
+    } else {
+      search[letter] -= 1;
+    }
+  }
+  return true
 }
+
+console.log(validAnagram('anagram', 'nagaram'))
 //Step 5: Look back and refactor
