@@ -1,13 +1,13 @@
 // For loop
-// const factorial = num => {
-//   total = 1;
-//   for (let i = num; i > 1; i--) {
-//     total *= i;
-//   }
-//   return total;
-// };
+const factorial = num => {
+  total = 1;
+  for (let i = num; i > 1; i--) {
+    total *= i;
+  }
+  return total;
+};
 
-// console.log(factorial(4));
+console.log(factorial(4));
 
 // Recursion
 

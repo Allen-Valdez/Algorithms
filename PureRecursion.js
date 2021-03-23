@@ -1,3 +1,5 @@
+// This recursion is self contained and we do not have an outside 
+
 const collectOddValues = arr => {
   let newArr = [];
 
